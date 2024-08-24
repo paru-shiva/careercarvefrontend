@@ -20,7 +20,7 @@ const Booking = ({
   useEffect(() => {
     const setDefaultMentor = async () => {
       const response = await fetch(
-        `http://localhost:3000/get-default-mentor/${selectedRole}`
+        `https://careercarvebackend-t941.onrender.com/get-default-mentor/${selectedRole}`
       );
       const result = await response.json();
 

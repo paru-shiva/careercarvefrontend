@@ -30,7 +30,10 @@ const ShoppingBag = ({ sessionType, user }) => {
       },
       body: JSON.stringify(data), // Convert data to JSON string
     };
-    const response = await fetch("http://localhost:3000/set-mentor", options);
+    const response = await fetch(
+      "https://careercarvebackend-t941.onrender.com/set-mentor",
+      options
+    );
     const result = await response.json();
     changUserMsg(result.msg);
     console.log(result);

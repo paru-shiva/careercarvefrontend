@@ -13,14 +13,18 @@ const Body = () => {
 
   useEffect(() => {
     const getAllMentors = async () => {
-      const response = await fetch("http://localhost:3000/get-allmentors");
+      const response = await fetch(
+        "https://careercarvebackend-t941.onrender.com/get-allmentors"
+      );
       const result = await response.json();
       changeListOfMentors(result);
     };
     getAllMentors();
 
     const getRoles = async () => {
-      const response = await fetch("http://localhost:3000/get-roles");
+      const response = await fetch(
+        "https://careercarvebackend-t941.onrender.com/get-roles"
+      );
       const result = await response.json();
       changeListOfRoles(result);
     };
@@ -29,7 +33,7 @@ const Body = () => {
 
   const getRoleMentors = async (role) => {
     const response = await fetch(
-      `http://localhost:3000/get-rolementors/${role}`
+      `https://careercarvebackend-t941.onrender.com/get-rolementors/${role}`
     );
     const result = await response.json();
     changeListOfMentors(result);
