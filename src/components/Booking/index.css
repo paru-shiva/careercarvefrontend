@@ -1,0 +1,54 @@
+.bookingComponent {
+  border: 1px solid rgb(154, 218, 233);
+  border-right: 0px;
+  border-radius: 12px 0px 0px 12px;
+  padding: 30px;
+  height: 100%;
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bookings {
+  width: 75%;
+  align-self: center;
+}
+
+.bookingTitle {
+  margin: 0px;
+  font-size: 20px;
+  text-decoration: underline;
+  margin: 10px 0px 20px 0px;
+  color: rgb(28, 142, 168);
+}
+
+.formLabel {
+  font-size: 12px;
+  margin-left: 3px;
+  color: rgb(28, 142, 168);
+}
+
+.inputs {
+  margin-bottom: 8px;
+}
+
+.mentorAlert {
+  font-size: 11px;
+  margin: 0px;
+  color: red;
+}
+
+.options {
+  color: rgb(98, 95, 95);
+}
+
+.addBtn {
+  color: white;
+  background-color: rgb(28, 142, 168);
+  border: 0px;
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-top: 12px;
+}

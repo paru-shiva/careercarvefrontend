@@ -1,0 +1,10 @@
+.mentorsListComponent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  margin: 40px;
+  padding: 20px;
+  flex-wrap: wrap;
+  color: rgb(98, 95, 95);
+}

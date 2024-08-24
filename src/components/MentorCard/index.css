@@ -1,0 +1,39 @@
+.mentorCard {
+  width: 350px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  margin: 12px;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profileImg {
+  width: 45px;
+}
+
+.premiumImg {
+  width: 30px;
+}
+
+.id {
+  margin: 0px;
+  font-style: italic;
+  color: gray;
+  font-size: 12px;
+}
+
+.detailsPara {
+  margin: 0px;
+  font-size: 14px;
+  color: rgb(76, 74, 74);
+  margin-bottom: 6px;
+}
+
+.details {
+  color: rgb(28, 142, 168);
+}

@@ -1,0 +1,67 @@
+.shoppingBagComponent {
+  border: 1px solid rgb(154, 218, 233);
+  border-radius: 0px 12px 12px 0px;
+  padding: 20px;
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bookingTitle {
+  margin: 0px;
+  font-size: 20px;
+  text-decoration: underline;
+  margin: 10px 0px 20px 0px;
+  color: rgb(28, 142, 168);
+}
+
+.bookingDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80%;
+}
+
+.billing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.item {
+  color: rgb(98, 95, 95);
+  margin: 0px;
+}
+
+.item-amount {
+  color: rgb(28, 142, 168);
+}
+
+.grandTotal {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.countBtn {
+  border: 1px solid lightgray;
+  outline: none;
+  background: transparent;
+  width: 25px;
+  height: 25px;
+  margin: 0px 10px;
+  border-radius: 6px;
+}
+
+.checkoutBtn {
+  color: white;
+  align-self: center;
+  background-color: rgb(28, 142, 168);
+  border: 0px;
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-top: 12px;
+}
