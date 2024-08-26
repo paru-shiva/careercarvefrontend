@@ -54,7 +54,9 @@ const Body = () => {
           changeUser={changeUser}
         />
         {showPayment == "" ? (
-          <div className="shoppingBagComponent">No Payment Data</div>
+          <div className="shoppingBagComponent">
+            <img src="emptyCartScreen.webp" />
+          </div>
         ) : (
           <ShoppingBag sessionType={sessionType} user={user} />
         )}
