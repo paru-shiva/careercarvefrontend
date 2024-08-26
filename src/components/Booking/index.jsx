@@ -9,6 +9,7 @@ const Booking = ({
   changeShowPayment,
   changeSessionType,
   changeUser,
+  serverStarted,
 }) => {
   const [selectedRole, changeSelectedRole] = useState("");
   const [selectedMentorId, changeSelectedMentorId] = useState("");
@@ -30,6 +31,7 @@ const Booking = ({
       changeSessionDetails(result);
     };
     if (selectedRole !== "") {
+      changeServerstarted(true);
       setDefaultMentor();
     }
   }, [selectedRole]);
@@ -119,6 +121,13 @@ const Booking = ({
   return (
     <div className="bookingComponent">
       <h3 className="bookingTitle">Book 1x1 with an Expert</h3>
+
+      {!serverStarted && (
+        <p className="firstLoadInstructions">
+          Render's Free service takes around 1 Minuite to Start Server & Load
+          data in the Form bellow.
+        </p>
+      )}
 
       <div className="bookings">
         <div className="inputs">

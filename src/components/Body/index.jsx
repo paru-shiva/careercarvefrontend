@@ -10,6 +10,7 @@ const Body = () => {
   const [showPayment, changeShowPayment] = useState("");
   const [sessionType, changeSessionType] = useState("");
   const [user, changeUser] = useState("");
+  const [serverStarted, changeServerstarted] = useState(false);
 
   useEffect(() => {
     const getAllMentors = async () => {
@@ -27,6 +28,7 @@ const Body = () => {
       );
       const result = await response.json();
       changeListOfRoles(result);
+      changeServerstarted(true);
     };
     getRoles();
   }, []);
@@ -43,6 +45,7 @@ const Body = () => {
     <div className="bodyComponent">
       <div className="bookingsSection">
         <Booking
+          serverStarted={serverStarted}
           roles={listOfRoles}
           getRoleMentors={getRoleMentors}
           mentorsList={listOfMentors}
