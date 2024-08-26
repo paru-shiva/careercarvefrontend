@@ -31,7 +31,6 @@ const Booking = ({
       changeSessionDetails(result);
     };
     if (selectedRole !== "") {
-      changeServerstarted(true);
       setDefaultMentor();
     }
   }, [selectedRole]);
